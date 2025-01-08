@@ -9,22 +9,14 @@ from sklearn.model_selection import train_test_split
 from nltk.corpus import stopwords
 from datetime import datetime
 import logging
-import wandb
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
-# Initialize Weights & Biases (wandb)
-wandb.init(project="lda_keyword_extraction", config={
-    "num_topics": 3,
-    "passes": 10,
-    "random_state": 42
-})
-
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
-# Sample Legal Documents //(replace with my dataset)
+# Sample Legal Documents (replace with your dataset)
 legal_docs = [
     "The contract shall be governed by the laws of the State of California.",
     "Parties agree to resolve disputes through arbitration in accordance with applicable rules.",
@@ -65,7 +57,6 @@ hyperparams = {
     "random_state": 42
 }
 logging.info(f"Hyperparameters: {json.dumps(hyperparams, indent=2)}")
-wandb.config.update(hyperparams)
 
 # Train LDA Model
 logging.info("Training LDA model...")
@@ -74,30 +65,11 @@ lda_model = LdaModel(corpus=train_corpus, id2word=dictionary,
                      random_state=hyperparams['random_state'], 
                      passes=hyperparams['passes'])
 
-# Log Model Metrics to Weights & Biases
-wandb.log({"perplexity": lda_model.log_perplexity(train_corpus)})
-
 # Save model checkpoint
-#checkpoint_path = "lda_model_checkpoint"
-#os.makedirs(checkpoint_path, exist_ok=True)
-#lda_model.save(os.path.join(checkpoint_path, "lda_model.gensim"))
-#ogging.info(f"Model saved to {checkpoint_path}")
-#wandb.save(os.path.join(checkpoint_path, "lda_model.gensim"))
-
-# Save model checkpoint
-#checkpoint_path = os.path.join(os.getcwd(), "lda_model_checkpoint")
-#os.makedirs(checkpoint_path, exist_ok=True)
-#local_model_path = os.path.join(checkpoint_path, "lda_model.gensim")
-#lda_model.save(local_model_path)
-#logging.info(f"Model saved locally to {local_model_path}")
-
-# Save model checkpoint
-checkpoint_path = os.path.join(os.getcwd(), "lda_model_checkpoint")
+checkpoint_path = "lda_model_checkpoint"
 os.makedirs(checkpoint_path, exist_ok=True)
-model_path = os.path.join(checkpoint_path, "lda_model.gensim")
-lda_model.save(model_path)
-logging.info(f"Model saved to {model_path}")
-wandb.save(model_path, base_path=checkpoint_path)
+lda_model.save(os.path.join(checkpoint_path, "lda_model.gensim"))
+logging.info(f"Model saved to {checkpoint_path}")
 
 # Sanity Check: Overfitting on one batch
 logging.info("Performing sanity check...")
@@ -107,7 +79,6 @@ one_batch_model = LdaModel(corpus=one_batch, id2word=dictionary,
                           random_state=hyperparams['random_state'], 
                           passes=hyperparams['passes'])
 logging.info("Sanity check completed. Model overfit to one batch.")
-wandb.log({"sanity_check_perplexity": one_batch_model.log_perplexity(one_batch)})
 
 # Log Results
 def log_results(model, corpus, dataset_name):
@@ -140,6 +111,3 @@ logging.info("Keywords per Document:")
 for i, doc in enumerate(processed_docs):
     keywords = extract_keywords(doc, lda_model, dictionary)
     logging.info(f"Document {i + 1}: {keywords}")
-    wandb.log({f"document_{i+1}_keywords": list(keywords)})
-
-wandb.finish()
