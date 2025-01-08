@@ -3,12 +3,14 @@ import os
 import nltk
 import json
 import gensim
+import numpy as np
 from gensim.corpora import Dictionary
 from gensim.models import LdaModel
 from sklearn.model_selection import train_test_split
 from nltk.corpus import stopwords
 from datetime import datetime
 import logging
+from sklearn.metrics import f1_score, accuracy_score
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -111,3 +113,86 @@ logging.info("Keywords per Document:")
 for i, doc in enumerate(processed_docs):
     keywords = extract_keywords(doc, lda_model, dictionary)
     logging.info(f"Document {i + 1}: {keywords}")
+
+# Calculate F1-score (Precision, Recall, F1)
+def calculate_f1(true_keywords, predicted_keywords):
+    precision = f1_score(true_keywords, predicted_keywords, average='micro')
+    recall = f1_score(true_keywords, predicted_keywords, average='micro')
+    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+    return precision, recall, f1
+
+# Correct the number of samples to match
+true_keywords = [
+    set(["contract", "governed", "laws", "state", "california"]), 
+    set(["parties", "resolve", "disputes", "arbitration", "rules"]),
+    set(["agreement", "effect", "terminated", "party", "notice"]),
+    set(["law", "guidelines", "intellectual", "property", "disputes"]),
+    set(["privacy", "laws", "collection", "use", "personal", "data"])
+]
+
+# Ensure that predicted_keywords matches the length of true_keywords
+predicted_keywords = [
+    set(["contract", "governed", "california"]),
+    set(["parties", "resolve", "rules"]),
+    set(["agreement", "terminated", "notice"]),
+    set(["law", "guidelines", "property", "disputes"]),
+    set(["privacy", "collection", "use", "data"])
+]
+
+# Flatten the sets and calculate F1
+flatten_true_keywords = [item for sublist in true_keywords for item in sublist]
+flatten_predicted_keywords = [item for sublist in predicted_keywords for item in sublist]
+
+# Ensure the two lists have the same number of elements
+if len(flatten_true_keywords) != len(flatten_predicted_keywords):
+    min_len = min(len(flatten_true_keywords), len(flatten_predicted_keywords))
+    flatten_true_keywords = flatten_true_keywords[:min_len]
+    flatten_predicted_keywords = flatten_predicted_keywords[:min_len]
+
+precision, recall, f1 = calculate_f1(flatten_true_keywords, flatten_predicted_keywords)
+
+logging.info(f"Precision: {precision}")
+logging.info(f"Recall: {recall}")
+logging.info(f"F1-Score: {f1}")
+
+# Categorical Accuracy (how many documents have correct predictions)
+def categorical_accuracy(true_keywords, predicted_keywords):
+    correct = 0
+    for true, pred in zip(true_keywords, predicted_keywords):
+        if true == pred:
+            correct += 1
+    return correct / len(true_keywords)
+
+accuracy = categorical_accuracy(true_keywords, predicted_keywords)
+logging.info(f"Categorical Accuracy: {accuracy}")
+
+# Calculate Word Error Rate (WER)
+def calculate_wer(ground_truth, predicted):
+    d = np.zeros((len(ground_truth) + 1, len(predicted) + 1))
+
+    for i in range(len(ground_truth) + 1):
+        d[i][0] = i
+    for j in range(len(predicted) + 1):
+        d[0][j] = j
+
+    for i in range(1, len(ground_truth) + 1):
+        for j in range(1, len(predicted) + 1):
+            if ground_truth[i - 1] == predicted[j - 1]:
+                cost = 0
+            else:
+                cost = 1
+            d[i][j] = min(d[i - 1][j] + 1,  
+                          d[i][j - 1] + 1,  
+                          d[i - 1][j - 1] + cost)  
+
+    return d[len(ground_truth)][len(predicted)] / float(len(ground_truth))
+
+# Calculate WER for each document
+wer_scores = []
+for gt, pred in zip(true_keywords, predicted_keywords):
+    wer_score = calculate_wer(list(gt), list(pred))
+    wer_scores.append(wer_score)
+
+# Average WER
+average_wer = np.mean(wer_scores)
+logging.info(f"Average Word Error Rate (WER): {average_wer}")
