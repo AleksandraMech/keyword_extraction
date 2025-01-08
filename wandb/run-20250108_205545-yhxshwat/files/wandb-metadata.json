@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.22631-SP0",
+  "python": "CPython 3.11.4",
+  "startedAt": "2025-01-08T19:55:45.511476Z",
+  "program": "C:\\Projects\\keyword_extraction\\lda_keyword_extraction.py",
+  "codePath": "lda_keyword_extraction.py",
+  "email": "olamech2001@wp.pl",
+  "root": "C:\\Projects\\keyword_extraction",
+  "host": "LAPTOP-2HSK4I89",
+  "executable": "C:\\Projects\\keyword_extraction\\venv\\Scripts\\python.exe",
+  "codePathLocal": "lda_keyword_extraction.py",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce MX250",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "510350659584",
+      "used": "409328852992"
+    }
+  },
+  "memory": {
+    "total": "16968364032"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce MX250",
+      "memoryTotal": "2147483648",
+      "cudaCores": 384,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.6"
+}

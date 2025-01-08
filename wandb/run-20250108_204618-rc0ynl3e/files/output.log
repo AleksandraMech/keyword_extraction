@@ -1,0 +1,104 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\olame\AppData\Roaming\nltk_data...
+[nltk_data]   Unzipping corpora\stopwords.zip.
+2025-01-08 20:46:24,185 - adding document #0 to Dictionary<0 unique tokens: []>
+2025-01-08 20:46:24,187 - built Dictionary<21 unique tokens: ['agreement', 'effect', 'either', 'notice', 'party']...> from 3 documents (total 22 corpus positions)
+2025-01-08 20:46:24,199 - Dictionary lifecycle event {'msg': "built Dictionary<21 unique tokens: ['agreement', 'effect', 'either', 'notice', 'party']...> from 3 documents (total 22 corpus positions)", 'datetime': '2025-01-08T20:46:24.188217', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'created'}
+2025-01-08 20:46:24,200 - Hyperparameters: {
+  "num_topics": 3,
+  "passes": 10,
+  "random_state": 42
+}
+2025-01-08 20:46:24,201 - Training LDA model...
+2025-01-08 20:46:24,202 - using symmetric alpha at 0.3333333333333333
+2025-01-08 20:46:24,202 - using symmetric eta at 0.3333333333333333
+2025-01-08 20:46:24,203 - using serial LDA version on this node
+2025-01-08 20:46:24,206 - running online (multi-pass) LDA training, 3 topics, 10 passes over the supplied corpus of 3 documents, updating model once every 3 documents, evaluating perplexity every 3 documents, iterating 50x with a convergence threshold of 0.001000
+2025-01-08 20:46:24,213 - -4.902 per-word bound, 29.9 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,214 - PROGRESS: pass 0, at document #3/3
+2025-01-08 20:46:24,219 - topic #0 (0.333): 0.083*"shall" + 0.082*"party" + 0.082*"proper" + 0.082*"effect" + 0.082*"agreement" + 0.082*"terminated" + 0.082*"remain" + 0.082*"either" + 0.082*"notice" + 0.022*"laws"
+2025-01-08 20:46:24,220 - topic #1 (0.333): 0.094*"provides" + 0.094*"disputes" + 0.094*"specific" + 0.094*"property" + 0.093*"intellectual" + 0.093*"law" + 0.093*"guidelines" + 0.025*"shall" + 0.025*"california" + 0.025*"laws"
+2025-01-08 20:46:24,220 - topic #2 (0.333): 0.101*"shall" + 0.101*"contract" + 0.100*"state" + 0.100*"governed" + 0.100*"california" + 0.100*"laws" + 0.027*"law" + 0.027*"intellectual" + 0.027*"guidelines" + 0.027*"notice"
+2025-01-08 20:46:24,221 - topic diff=1.627215, rho=1.000000
+2025-01-08 20:46:24,223 - -3.720 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,224 - PROGRESS: pass 1, at document #3/3
+2025-01-08 20:46:24,225 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,225 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.094*"property" + 0.094*"intellectual" + 0.094*"law" + 0.094*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,227 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.101*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,228 - topic diff=0.046583, rho=0.577350
+2025-01-08 20:46:24,229 - -3.719 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,230 - PROGRESS: pass 2, at document #3/3
+2025-01-08 20:46:24,231 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,232 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,232 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,233 - topic diff=0.017542, rho=0.500000
+2025-01-08 20:46:24,234 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,235 - PROGRESS: pass 3, at document #3/3
+2025-01-08 20:46:24,235 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,236 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,237 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,238 - topic diff=0.007949, rho=0.447214
+2025-01-08 20:46:24,239 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,240 - PROGRESS: pass 4, at document #3/3
+2025-01-08 20:46:24,241 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,242 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,242 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,243 - topic diff=0.004042, rho=0.408248
+2025-01-08 20:46:24,245 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,246 - PROGRESS: pass 5, at document #3/3
+2025-01-08 20:46:24,247 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,248 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,249 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,250 - topic diff=0.002226, rho=0.377964
+2025-01-08 20:46:24,251 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,252 - PROGRESS: pass 6, at document #3/3
+2025-01-08 20:46:24,254 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,257 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,258 - topic #2 (0.333): 0.102*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,259 - topic diff=0.001300, rho=0.353553
+2025-01-08 20:46:24,261 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,262 - PROGRESS: pass 7, at document #3/3
+2025-01-08 20:46:24,263 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,263 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,264 - topic #2 (0.333): 0.103*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,265 - topic diff=0.000795, rho=0.333333
+2025-01-08 20:46:24,266 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,267 - PROGRESS: pass 8, at document #3/3
+2025-01-08 20:46:24,268 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,268 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,269 - topic #2 (0.333): 0.103*"shall" + 0.102*"contract" + 0.102*"state" + 0.102*"governed" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,270 - topic diff=0.000504, rho=0.316228
+2025-01-08 20:46:24,271 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,272 - PROGRESS: pass 9, at document #3/3
+2025-01-08 20:46:24,272 - topic #0 (0.333): 0.083*"shall" + 0.083*"party" + 0.083*"proper" + 0.083*"effect" + 0.083*"agreement" + 0.083*"terminated" + 0.083*"remain" + 0.083*"either" + 0.083*"notice" + 0.021*"laws"
+2025-01-08 20:46:24,273 - topic #1 (0.333): 0.095*"provides" + 0.095*"disputes" + 0.095*"specific" + 0.095*"property" + 0.095*"intellectual" + 0.095*"law" + 0.095*"guidelines" + 0.024*"shall" + 0.024*"california" + 0.024*"laws"
+2025-01-08 20:46:24,275 - topic #2 (0.333): 0.103*"shall" + 0.102*"contract" + 0.102*"governed" + 0.102*"state" + 0.102*"california" + 0.102*"laws" + 0.026*"law" + 0.026*"intellectual" + 0.026*"guidelines" + 0.026*"notice"
+2025-01-08 20:46:24,277 - topic diff=0.000329, rho=0.301511
+2025-01-08 20:46:24,278 - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=21, num_topics=3, decay=0.5, chunksize=2000> in 0.07s', 'datetime': '2025-01-08T20:46:24.278518', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'created'}
+2025-01-08 20:46:24,280 - -3.718 per-word bound, 13.2 perplexity estimate based on a held-out corpus of 3 documents with 22 words
+2025-01-08 20:46:24,281 - LdaState lifecycle event {'fname_or_handle': 'lda_model_checkpoint\\lda_model.gensim.state', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-01-08T20:46:24.281976', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'saving'}
+2025-01-08 20:46:24,284 - saved lda_model_checkpoint\lda_model.gensim.state
+2025-01-08 20:46:24,286 - LdaModel lifecycle event {'fname_or_handle': 'lda_model_checkpoint\\lda_model.gensim', 'separately': "['expElogbeta', 'sstats']", 'sep_limit': 10485760, 'ignore': ['state', 'dispatcher', 'id2word'], 'datetime': '2025-01-08T20:46:24.286403', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'saving'}
+2025-01-08 20:46:24,286 - storing np array 'expElogbeta' to lda_model_checkpoint\lda_model.gensim.expElogbeta.npy
+2025-01-08 20:46:24,288 - not storing attribute state
+2025-01-08 20:46:24,289 - not storing attribute dispatcher
+2025-01-08 20:46:24,291 - not storing attribute id2word
+2025-01-08 20:46:24,294 - saved lda_model_checkpoint\lda_model.gensim
+2025-01-08 20:46:24,295 - Model saved to lda_model_checkpoint
+Traceback (most recent call last):
+  File "C:\Users\olame\Desktop\keyword_extraction\lda_keyword_extraction.py", line 85, in <module>
+    wandb.save(os.path.join(checkpoint_path, "lda_model.gensim"))
+  File "C:\Users\olame\Desktop\keyword_extraction\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 394, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olame\Desktop\keyword_extraction\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 384, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\olame\Desktop\keyword_extraction\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2003, in save
+    return self._save(
+           ^^^^^^^^^^^
+  File "C:\Users\olame\Desktop\keyword_extraction\venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2062, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Users\olame\AppData\Local\Programs\Python\Python311\Lib\pathlib.py", line 1198, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] Klient nie ma wymaganych uprawnień: 'C:\\Users\\olame\\Desktop\\keyword_extraction\\lda_model_checkpoint\\lda_model.gensim' -> 'C:\\Users\\olame\\Desktop\\keyword_extraction\\wandb\\run-20250108_204618-rc0ynl3e\\files\\lda_model_checkpoint\\lda_model.gensim'
