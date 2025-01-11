@@ -1,0 +1,186 @@
+2025-01-11 19:13:22,056 - adding document #0 to Dictionary<0 unique tokens: []>
+2025-01-11 19:13:22,068 - built Dictionary<5085 unique tokens: ['administracji', 'adres', 'art', 'brzmieniu', 'celne']...> from 7 documents (total 29966 corpus positions)
+2025-01-11 19:13:22,084 - Dictionary lifecycle event {'msg': "built Dictionary<5085 unique tokens: ['administracji', 'adres', 'art', 'brzmieniu', 'celne']...> from 7 documents (total 29966 corpus positions)", 'datetime': '2025-01-11T19:13:22.069769', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'created'}
+2025-01-11 19:13:22,097 - Hyperparameters: {
+  "num_topics": 3,
+  "passes": 10,
+  "random_state": 42
+}
+2025-01-11 19:13:22,100 - Training LDA model...
+2025-01-11 19:13:22,100 - using symmetric alpha at 0.3333333333333333
+2025-01-11 19:13:22,100 - using symmetric eta at 0.3333333333333333
+2025-01-11 19:13:22,101 - using serial LDA version on this node
+2025-01-11 19:13:22,103 - running online (multi-pass) LDA training, 3 topics, 10 passes over the supplied corpus of 7 documents, updating model once every 7 documents, evaluating perplexity every 7 documents, iterating 50x with a convergence threshold of 0.001000
+2025-01-11 19:13:22,129 - -9.168 per-word bound, 575.2 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,129 - PROGRESS: pass 0, at document #7/7
+2025-01-11 19:13:22,137 - topic #0 (0.333): 0.046*"w" + 0.030*"z" + 0.016*"odpady" + 0.014*"art" + 0.011*"lub" + 0.011*"ust" + 0.010*"na" + 0.009*"inne" + 0.007*"poz" + 0.007*"oraz"
+2025-01-11 19:13:22,137 - topic #1 (0.333): 0.045*"w" + 0.035*"z" + 0.015*"odpady" + 0.012*"inne" + 0.012*"art" + 0.011*"lub" + 0.010*"na" + 0.009*"ni" + 0.008*"zawierajce" + 0.007*"mowa"
+2025-01-11 19:13:22,137 - topic #2 (0.333): 0.036*"w" + 0.035*"z" + 0.016*"lub" + 0.012*"odpady" + 0.011*"art" + 0.009*"inne" + 0.009*"mowa" + 0.007*"ni" + 0.007*"ust" + 0.006*"na"
+2025-01-11 19:13:22,137 - topic diff=1.267134, rho=1.000000
+2025-01-11 19:13:22,163 - -7.366 per-word bound, 165.0 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,164 - PROGRESS: pass 1, at document #7/7
+2025-01-11 19:13:22,171 - topic #0 (0.333): 0.051*"w" + 0.027*"z" + 0.019*"art" + 0.014*"ust" + 0.013*"na" + 0.013*"mowa" + 0.013*"lub" + 0.010*"funduszu" + 0.008*"r" + 0.007*"odpady"
+2025-01-11 19:13:22,171 - topic #1 (0.333): 0.043*"z" + 0.038*"w" + 0.028*"odpady" + 0.019*"inne" + 0.013*"zawierajce" + 0.012*"ni" + 0.010*"wymienione" + 0.009*"niebezpieczne" + 0.008*"lub" + 0.008*"substancje"
+2025-01-11 19:13:22,171 - topic #2 (0.333): 0.039*"w" + 0.026*"z" + 0.018*"lub" + 0.013*"art" + 0.011*"przewozu" + 0.008*"na" + 0.007*"przesyki" + 0.007*"nie" + 0.006*"przewonik" + 0.006*"si"
+2025-01-11 19:13:22,171 - topic diff=0.656604, rho=0.577350
+2025-01-11 19:13:22,198 - -6.999 per-word bound, 127.9 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,198 - PROGRESS: pass 2, at document #7/7
+2025-01-11 19:13:22,204 - topic #0 (0.333): 0.053*"w" + 0.026*"z" + 0.021*"art" + 0.016*"mowa" + 0.015*"ust" + 0.014*"na" + 0.013*"lub" + 0.011*"funduszu" + 0.009*"r" + 0.008*"ktrym"
+2025-01-11 19:13:22,204 - topic #1 (0.333): 0.046*"z" + 0.036*"w" + 0.033*"odpady" + 0.022*"inne" + 0.016*"zawierajce" + 0.014*"ni" + 0.012*"wymienione" + 0.010*"niebezpieczne" + 0.009*"substancje" + 0.007*"lub"
+2025-01-11 19:13:22,204 - topic #2 (0.333): 0.041*"w" + 0.023*"z" + 0.018*"lub" + 0.014*"art" + 0.013*"przewozu" + 0.010*"na" + 0.009*"przesyki" + 0.008*"nie" + 0.008*"przewonik" + 0.007*"si"
+2025-01-11 19:13:22,204 - topic diff=0.379253, rho=0.500000
+2025-01-11 19:13:22,227 - -6.901 per-word bound, 119.5 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,227 - PROGRESS: pass 3, at document #7/7
+2025-01-11 19:13:22,234 - topic #0 (0.333): 0.054*"w" + 0.026*"z" + 0.022*"art" + 0.017*"mowa" + 0.016*"ust" + 0.015*"na" + 0.013*"lub" + 0.012*"funduszu" + 0.009*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,234 - topic #1 (0.333): 0.048*"z" + 0.035*"odpady" + 0.034*"w" + 0.024*"inne" + 0.016*"zawierajce" + 0.014*"ni" + 0.013*"wymienione" + 0.011*"niebezpieczne" + 0.009*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,234 - topic #2 (0.333): 0.042*"w" + 0.021*"z" + 0.019*"lub" + 0.015*"art" + 0.014*"przewozu" + 0.010*"na" + 0.009*"przesyki" + 0.008*"przewonik" + 0.008*"nie" + 0.008*"si"
+2025-01-11 19:13:22,235 - topic diff=0.228126, rho=0.447214
+2025-01-11 19:13:22,256 - -6.867 per-word bound, 116.7 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,256 - PROGRESS: pass 4, at document #7/7
+2025-01-11 19:13:22,263 - topic #0 (0.333): 0.054*"w" + 0.026*"z" + 0.022*"art" + 0.018*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.012*"funduszu" + 0.009*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,263 - topic #1 (0.333): 0.049*"z" + 0.036*"odpady" + 0.034*"w" + 0.024*"inne" + 0.017*"zawierajce" + 0.015*"ni" + 0.013*"wymienione" + 0.011*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,263 - topic #2 (0.333): 0.043*"w" + 0.021*"z" + 0.019*"lub" + 0.015*"art" + 0.014*"przewozu" + 0.010*"na" + 0.010*"przesyki" + 0.008*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,263 - topic diff=0.144068, rho=0.408248
+2025-01-11 19:13:22,283 - -6.852 per-word bound, 115.5 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,283 - PROGRESS: pass 5, at document #7/7
+2025-01-11 19:13:22,289 - topic #0 (0.333): 0.055*"w" + 0.026*"z" + 0.022*"art" + 0.018*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.009*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,289 - topic #1 (0.333): 0.049*"z" + 0.037*"odpady" + 0.033*"w" + 0.025*"inne" + 0.017*"zawierajce" + 0.015*"ni" + 0.013*"wymienione" + 0.011*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,289 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.014*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,289 - topic diff=0.093550, rho=0.377964
+2025-01-11 19:13:22,310 - -6.845 per-word bound, 115.0 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,310 - PROGRESS: pass 6, at document #7/7
+2025-01-11 19:13:22,316 - topic #0 (0.333): 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,316 - topic #1 (0.333): 0.049*"z" + 0.038*"odpady" + 0.033*"w" + 0.025*"inne" + 0.017*"zawierajce" + 0.015*"ni" + 0.013*"wymienione" + 0.011*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,316 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.014*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,317 - topic diff=0.062083, rho=0.353553
+2025-01-11 19:13:22,337 - -6.842 per-word bound, 114.7 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,337 - PROGRESS: pass 7, at document #7/7
+2025-01-11 19:13:22,343 - topic #0 (0.333): 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,344 - topic #1 (0.333): 0.050*"z" + 0.038*"odpady" + 0.033*"w" + 0.025*"inne" + 0.017*"zawierajce" + 0.015*"ni" + 0.014*"wymienione" + 0.012*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,344 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.014*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,344 - topic diff=0.042059, rho=0.333333
+2025-01-11 19:13:22,368 - -6.840 per-word bound, 114.6 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,368 - PROGRESS: pass 8, at document #7/7
+2025-01-11 19:13:22,375 - topic #0 (0.333): 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,375 - topic #1 (0.333): 0.050*"z" + 0.038*"odpady" + 0.033*"w" + 0.025*"inne" + 0.018*"zawierajce" + 0.015*"ni" + 0.014*"wymienione" + 0.012*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,375 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.015*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,375 - topic diff=0.029035, rho=0.316228
+2025-01-11 19:13:22,397 - -6.839 per-word bound, 114.5 perplexity estimate based on a held-out corpus of 7 documents with 29966 words
+2025-01-11 19:13:22,397 - PROGRESS: pass 9, at document #7/7
+2025-01-11 19:13:22,403 - topic #0 (0.333): 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,403 - topic #1 (0.333): 0.050*"z" + 0.038*"odpady" + 0.033*"w" + 0.026*"inne" + 0.018*"zawierajce" + 0.015*"ni" + 0.014*"wymienione" + 0.012*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,403 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.015*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,403 - topic diff=0.020417, rho=0.301511
+2025-01-11 19:13:22,403 - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=5085, num_topics=3, decay=0.5, chunksize=2000> in 0.30s', 'datetime': '2025-01-11T19:13:22.403638', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'created'}
+2025-01-11 19:13:22,404 - LdaState lifecycle event {'fname_or_handle': 'lda_model_checkpoint\\lda_model.gensim.state', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2025-01-11T19:13:22.403638', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'saving'}
+2025-01-11 19:13:22,404 - saved lda_model_checkpoint\lda_model.gensim.state
+2025-01-11 19:13:22,407 - LdaModel lifecycle event {'fname_or_handle': 'lda_model_checkpoint\\lda_model.gensim', 'separately': "['expElogbeta', 'sstats']", 'sep_limit': 10485760, 'ignore': ['state', 'dispatcher', 'id2word'], 'datetime': '2025-01-11T19:13:22.407265', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'saving'}
+2025-01-11 19:13:22,408 - storing np array 'expElogbeta' to lda_model_checkpoint\lda_model.gensim.expElogbeta.npy
+2025-01-11 19:13:22,408 - not storing attribute state
+2025-01-11 19:13:22,408 - not storing attribute dispatcher
+2025-01-11 19:13:22,408 - not storing attribute id2word
+2025-01-11 19:13:22,409 - saved lda_model_checkpoint\lda_model.gensim
+2025-01-11 19:13:22,410 - Model saved to lda_model_checkpoint
+2025-01-11 19:13:22,410 - Performing sanity check...
+2025-01-11 19:13:22,410 - using symmetric alpha at 0.3333333333333333
+2025-01-11 19:13:22,410 - using symmetric eta at 0.3333333333333333
+2025-01-11 19:13:22,411 - using serial LDA version on this node
+2025-01-11 19:13:22,413 - running online (multi-pass) LDA training, 3 topics, 10 passes over the supplied corpus of 1 documents, updating model once every 1 documents, evaluating perplexity every 1 documents, iterating 50x with a convergence threshold of 0.001000
+2025-01-11 19:13:22,415 - -24.916 per-word bound, 31663585.2 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,415 - PROGRESS: pass 0, at document #1/1
+2025-01-11 19:13:22,417 - topic #0 (0.333): 0.004*"w" + 0.003*"ust" + 0.002*"z" + 0.002*"oraz" + 0.002*"numer" + 0.001*"r" + 0.001*"na" + 0.001*"jest" + 0.001*"dnia" + 0.001*"poz"
+2025-01-11 19:13:22,418 - topic #1 (0.333): 0.006*"w" + 0.003*"z" + 0.002*"ust" + 0.002*"na" + 0.002*"jest" + 0.002*"r" + 0.002*"numer" + 0.002*"mowa" + 0.002*"oraz" + 0.002*"towaru"
+2025-01-11 19:13:22,418 - topic #2 (0.333): 0.003*"w" + 0.002*"z" + 0.001*"ust" + 0.001*"mowa" + 0.001*"numer" + 0.001*"oraz" + 0.001*"jest" + 0.001*"r" + 0.001*"zgoszenie" + 0.001*"dnia"
+2025-01-11 19:13:22,418 - topic diff=1.633408, rho=1.000000
+2025-01-11 19:13:22,421 - -8.442 per-word bound, 347.8 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,421 - PROGRESS: pass 1, at document #1/1
+2025-01-11 19:13:22,423 - topic #0 (0.333): 0.002*"w" + 0.001*"ust" + 0.001*"z" + 0.001*"oraz" + 0.001*"numer" + 0.001*"r" + 0.001*"na" + 0.001*"jest" + 0.001*"dnia" + 0.001*"poz"
+2025-01-11 19:13:22,423 - topic #1 (0.333): 0.009*"w" + 0.004*"z" + 0.004*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.002*"dnia"
+2025-01-11 19:13:22,423 - topic #2 (0.333): 0.001*"w" + 0.001*"z" + 0.001*"ust" + 0.001*"mowa" + 0.001*"numer" + 0.001*"oraz" + 0.001*"jest" + 0.001*"r" + 0.001*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,423 - topic diff=0.075759, rho=0.577350
+2025-01-11 19:13:22,425 - -7.921 per-word bound, 242.3 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,426 - PROGRESS: pass 2, at document #1/1
+2025-01-11 19:13:22,428 - topic #0 (0.333): 0.001*"w" + 0.001*"ust" + 0.001*"z" + 0.001*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,428 - topic #1 (0.333): 0.010*"w" + 0.004*"z" + 0.004*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,428 - topic #2 (0.333): 0.001*"w" + 0.001*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,428 - topic diff=0.031975, rho=0.500000
+2025-01-11 19:13:22,430 - -7.803 per-word bound, 223.2 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,430 - PROGRESS: pass 3, at document #1/1
+2025-01-11 19:13:22,432 - topic #0 (0.333): 0.001*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,432 - topic #1 (0.333): 0.010*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,432 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,433 - topic diff=0.016222, rho=0.447214
+2025-01-11 19:13:22,435 - -7.764 per-word bound, 217.3 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,435 - PROGRESS: pass 4, at document #1/1
+2025-01-11 19:13:22,437 - topic #0 (0.333): 0.001*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,437 - topic #1 (0.333): 0.010*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,437 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,437 - topic diff=0.008975, rho=0.408248
+2025-01-11 19:13:22,439 - -7.749 per-word bound, 215.2 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,439 - PROGRESS: pass 5, at document #1/1
+2025-01-11 19:13:22,441 - topic #0 (0.333): 0.000*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,441 - topic #1 (0.333): 0.010*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,441 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,441 - topic diff=0.005248, rho=0.377964
+2025-01-11 19:13:22,444 - -7.743 per-word bound, 214.3 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,444 - PROGRESS: pass 6, at document #1/1
+2025-01-11 19:13:22,446 - topic #0 (0.333): 0.000*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,446 - topic #1 (0.333): 0.010*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,446 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,446 - topic diff=0.003194, rho=0.353553
+2025-01-11 19:13:22,448 - -7.741 per-word bound, 213.9 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,448 - PROGRESS: pass 7, at document #1/1
+2025-01-11 19:13:22,450 - topic #0 (0.333): 0.000*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,450 - topic #1 (0.333): 0.011*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,450 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,450 - topic diff=0.002010, rho=0.333333
+2025-01-11 19:13:22,452 - -7.740 per-word bound, 213.8 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,452 - PROGRESS: pass 8, at document #1/1
+2025-01-11 19:13:22,454 - topic #0 (0.333): 0.000*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,454 - topic #1 (0.333): 0.011*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,454 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,454 - topic diff=0.001300, rho=0.316228
+2025-01-11 19:13:22,456 - -7.739 per-word bound, 213.7 perplexity estimate based on a held-out corpus of 1 documents with 410 words
+2025-01-11 19:13:22,457 - PROGRESS: pass 9, at document #1/1
+2025-01-11 19:13:22,458 - topic #0 (0.333): 0.000*"w" + 0.000*"ust" + 0.000*"z" + 0.000*"oraz" + 0.000*"numer" + 0.000*"r" + 0.000*"na" + 0.000*"jest" + 0.000*"dnia" + 0.000*"poz"
+2025-01-11 19:13:22,459 - topic #1 (0.333): 0.011*"w" + 0.005*"z" + 0.005*"ust" + 0.003*"na" + 0.003*"jest" + 0.003*"r" + 0.003*"numer" + 0.003*"oraz" + 0.003*"mowa" + 0.003*"dnia"
+2025-01-11 19:13:22,459 - topic #2 (0.333): 0.000*"w" + 0.000*"z" + 0.000*"ust" + 0.000*"mowa" + 0.000*"numer" + 0.000*"oraz" + 0.000*"jest" + 0.000*"r" + 0.000*"zgoszenie" + 0.000*"dnia"
+2025-01-11 19:13:22,459 - topic diff=0.000860, rho=0.301511
+2025-01-11 19:13:22,459 - LdaModel lifecycle event {'msg': 'trained LdaModel<num_terms=5085, num_topics=3, decay=0.5, chunksize=2000> in 0.05s', 'datetime': '2025-01-11T19:13:22.459769', 'gensim': '4.3.3', 'python': '3.11.4 (tags/v3.11.4:d2340ef, Jun  7 2023, 05:45:37) [MSC v.1934 64 bit (AMD64)]', 'platform': 'Windows-10-10.0.22631-SP0', 'event': 'created'}
+2025-01-11 19:13:22,459 - Sanity check completed. Model overfit to one batch.
+2025-01-11 19:13:22,459 - Results for Training Set:
+2025-01-11 19:13:22,460 - Document 1: [(0, 0.3555307), (1, 0.50898015), (2, 0.1354891)]
+2025-01-11 19:13:22,462 - Document 2: [(2, 0.99990106)]
+2025-01-11 19:13:22,462 - Document 3: [(1, 0.027100084), (2, 0.9723623)]
+2025-01-11 19:13:22,462 - Document 4: [(1, 0.99991864)]
+2025-01-11 19:13:22,463 - Document 5: [(0, 0.16052322), (1, 0.8381318)]
+2025-01-11 19:13:22,464 - Document 6: [(0, 0.014068268), (1, 0.9857799)]
+2025-01-11 19:13:22,465 - Document 7: [(0, 0.9999277)]
+2025-01-11 19:13:22,465 - Results for Validation Set:
+2025-01-11 19:13:22,466 - Document 1: [(0, 0.5941203), (1, 0.12936199), (2, 0.27651766)]
+2025-01-11 19:13:22,466 - Results for Test Set:
+2025-01-11 19:13:22,466 - Document 1: [(0, 0.77789295), (1, 0.11479739), (2, 0.10730965)]
+2025-01-11 19:13:22,467 - Document 2: [(0, 0.43060917), (1, 0.15341085), (2, 0.41597998)]
+2025-01-11 19:13:22,467 - Extracted Topics and Keywords:
+2025-01-11 19:13:22,467 - topic #0 (0.333): 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,467 - topic #1 (0.333): 0.050*"z" + 0.038*"odpady" + 0.033*"w" + 0.026*"inne" + 0.018*"zawierajce" + 0.015*"ni" + 0.014*"wymienione" + 0.012*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,467 - topic #2 (0.333): 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.015*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,467 - Topic 0: 0.055*"w" + 0.025*"z" + 0.023*"art" + 0.019*"mowa" + 0.017*"ust" + 0.015*"na" + 0.013*"lub" + 0.013*"funduszu" + 0.010*"ktrym" + 0.009*"r"
+2025-01-11 19:13:22,467 - Topic 1: 0.050*"z" + 0.038*"odpady" + 0.033*"w" + 0.026*"inne" + 0.018*"zawierajce" + 0.015*"ni" + 0.014*"wymienione" + 0.012*"niebezpieczne" + 0.010*"substancje" + 0.008*"odpadw"
+2025-01-11 19:13:22,467 - Topic 2: 0.043*"w" + 0.020*"z" + 0.019*"lub" + 0.015*"art" + 0.015*"przewozu" + 0.011*"na" + 0.010*"przesyki" + 0.009*"przewonik" + 0.008*"si" + 0.008*"nie"
+2025-01-11 19:13:22,467 - Keywords per Document:
+2025-01-11 19:13:22,468 - Document 1: {'z', 'mowa', 'odpady', 'inne', 'przewozu', 'zawierajce', 'lub', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,471 - Document 2: {'z', 'mowa', 'odpady', 'inne', 'przewozu', 'zawierajce', 'lub', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,472 - Document 3: {'z', 'odpady', 'inne', 'przewozu', 'zawierajce', 'lub', 'art', 'w'}
+2025-01-11 19:13:22,474 - Document 4: {'z', 'mowa', 'odpady', 'inne', 'zawierajce', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,475 - Document 5: {'z', 'mowa', 'odpady', 'inne', 'zawierajce', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,479 - Document 6: {'z', 'mowa', 'odpady', 'inne', 'przewozu', 'zawierajce', 'lub', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,483 - Document 7: {'z', 'mowa', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,485 - Document 8: {'z', 'lub', 'w', 'art', 'przewozu'}
+2025-01-11 19:13:22,487 - Document 9: {'z', 'mowa', 'odpady', 'inne', 'przewozu', 'zawierajce', 'lub', 'w', 'art', 'ust'}
+2025-01-11 19:13:22,489 - Document 10: {'z', 'odpady', 'inne', 'zawierajce', 'w'}
+2025-01-11 19:13:22,493 - Precision: 0.058823529411764705
+2025-01-11 19:13:22,494 - Recall: 0.058823529411764705
+2025-01-11 19:13:22,494 - F1-Score: 0.058823529411764705
+2025-01-11 19:13:22,494 - Categorical Accuracy: 0.0
+2025-01-11 19:13:22,494 - Average Word Error Rate (WER): 0.54
